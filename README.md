@@ -1,4 +1,4 @@
-# Rails-API
+# Rails-API ![Build](https://github.com/andrejreznik/rails-api/workflows/Continuous%20integration/badge.svg)
 
 This project fully placed in Docker.
 
@@ -8,11 +8,11 @@ There are two ways to setup environment and run application via Docker:
 
 1. Build manually from shell on any machine with docker.
 
-## Requirements
+## 📌 Requirements
 
 - [Docker](https://www.docker.com/).
 
-## Setup
+## 🔧 Setup
 
 0. Install `remote-containers` Visual Studio Code extensions.
 
@@ -33,22 +33,14 @@ There are two ways to setup environment and run application via Docker:
     > code .
     ```
 
-## Setup from shell (skip if using VS Code).
-
-1. Clone this repo to your machine.
-
-    ```bash
-    > git clone git@github.com:andrejreznik/rails-api.git
-    ```
-
-1. Build.
+    or build manually **(skip if using VS Code)**.
 
     ```bash
     > cd rails-api
     > docker-compose build .
     ```
 
-## Run application
+## 🚀 Run application
 
 1. To start `rails` server you need to start process in terminal:
 
@@ -56,24 +48,30 @@ There are two ways to setup environment and run application via Docker:
     > bin/rails s -b 0
     ```
 
-or [launch](.vscode/launch.json) application by click on `Run` -> `Run Without Debugging` <kbd>Ctrl</kbd> + <kbd>F5</kbd>
+    or simply [launch](.vscode/launch.json) application by click on `Run` -> `Run Without Debugging` <kbd>Ctrl</kbd> + <kbd>F5</kbd>,
 
-### Run in system shell
-
-1. Start `rails` server.
-
+    or via `docker-compose` command:
     ```bash
     > docker-compose exec web bin/rails s -b 0
     ```
 
-## Run the test suite
+## ✔️ Run the test suite
 
-  ```bash
-  > rspec
-  ```
+1. Run all specs:
 
-## Check for Rubocop offenses
+    ```bash
+    > rspec
+    ```
 
-  ```bash
-  > rubocop
-  ```
+## 🤖 Check for Rubocop offenses
+
+1. Check all files by RuboCop:
+
+    ```bash
+    > rubocop
+    ```
+
+
+## ⚖️ License
+
+See [LICENSE](LICENSE).
