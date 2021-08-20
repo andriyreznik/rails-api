@@ -31,7 +31,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'listen', '~> 3.6'
+  gem 'listen', '~> 3.7'
   # Intellisense, code completion, and inline documentation
   gem 'solargraph', require: false
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
