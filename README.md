@@ -14,19 +14,19 @@ There are two ways to setup environment and run application via Docker:
 
 ## 🔧 Setup
 
-0. Install `remote-containers` Visual Studio Code extensions.
+0. Install `remote-containers` Visual Studio Code extensions:
 
     ```bash
     > code --install-extension ms-vscode-remote.remote-containers
     ```
 
-1. Clone this repo to your machine.
+1. Clone this repo to your machine:
 
     ```bash
     > git clone git@github.com:andrejreznik/rails-api.git
     ```
 
-2. Open Visual Studio Code in `rails-api` folder.:
+2. Open Visual Studio Code in `rails-api` folder:
 
     ```bash
     > cd rails-api
@@ -38,6 +38,12 @@ There are two ways to setup environment and run application via Docker:
     ```bash
     > cd rails-api
     > docker-compose build .
+    ```
+
+3. Prepare database:
+
+    ```bash
+    > bin/rails db:create
     ```
 
 ## 🚀 Run application
